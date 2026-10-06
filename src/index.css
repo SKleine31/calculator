@@ -1,0 +1,53 @@
+/* 1. Set up a modern box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set core html and body defaults */
+html, body {
+  height: 100%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Ensure #root fills the screen so full-height layouts work */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+/* 5. Make media elements responsive */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Prevent text overflow issues */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Remove list styles on ul, ol elements with a list role */
+ul, ol {
+  list-style: none;
+}
+
+/* 9. Anchor styling defaults */
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.Header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Main Calculator Container */
+.Calculator {
+  width: 350px;
+  background: #1e293b;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Display Screen */
+.Display {
+  height: 80px;
+  background: #0f172a;
+  border-radius: 16px;
+  color: #38bdf8;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
+  word-break: break-all;
+  overflow-x: auto;
+}
+
+/* Keypad Grid Layout */
+.Keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Button Base Styles */
+.Button {
+  height: 60px;
+  border: none;
+  border-radius: 14px;
+  background: #334155;
+  color: #f8fafc;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Button:hover {
+  background: #475569;
+  transform: translateY(-2px);
+}
+
+.Button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Specialized Button Accent Styles */
+.btn-operator {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+.btn-operator:hover {
+  background: rgba(56, 189, 248, 0.25);
+}
+
+.btn-clear {
+  background: rgba(239, 68, 68, 0.85);
+  color: #ffffff;
+}
+
+.btn-clear:hover {
+  background: #ef4444;
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+}
+
+.btn-equals {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.btn-equals:hover {
+  background: #38bdf8;
+  box-shadow: 0 0 12px rgba(89, 190, 248, 0.904);
+}
+
+/* Bottom Tag */
+.FooterTag {
+  width: 100%;
+  padding: 12px;
+  background: #0f172a;
+  border-radius: 12px;
+  color: #0ea5e9;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
